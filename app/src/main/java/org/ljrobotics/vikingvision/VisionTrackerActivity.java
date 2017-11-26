@@ -510,7 +510,7 @@ public class VisionTrackerActivity extends Activity implements RobotConnectionSt
     private void whitelistLockTasks() {
         DevicePolicyManager manager =
                 (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
-        ComponentName componentName = ChezyDeviceAdminReceiver.getComponentName(this);
+        ComponentName componentName = VikingDeviceAdminReceiver.getComponentName(this);
 
         if (manager.isDeviceOwnerApp(getPackageName())) {
             manager.setLockTaskPackages(componentName, new String[]{getPackageName()});
@@ -520,7 +520,7 @@ public class VisionTrackerActivity extends Activity implements RobotConnectionSt
     private void enableDeviceAdmin() {
         DevicePolicyManager manager =
                 (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
-        ComponentName componentName = ChezyDeviceAdminReceiver.getComponentName(this);
+        ComponentName componentName = VikingDeviceAdminReceiver.getComponentName(this);
 
         if(!manager.isAdminActive(componentName)) {
             Intent intent = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);

@@ -9,11 +9,11 @@ Android-based Vision System
 
 ## To provision a device for robot use
 * Enable device admin
-1. Settings App > Security > Device Administrators > Click box 'on' for CheezDroid
+1. Settings App > Security > Device Administrators > Click box 'on' for VikingVision
 
 * Enable device owner
 1. adb shell
-2. dpm set-device-owner org.ljrobotics.vikingvision/.ChezyDeviceAdminReceiver
+2. dpm set-device-owner org.ljrobotics.vikingvision/.VikingDeviceAdminReceiver
 
 ## How to Install ADB on the RoboRIO
 

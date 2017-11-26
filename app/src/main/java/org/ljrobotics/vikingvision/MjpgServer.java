@@ -70,7 +70,7 @@ public class MjpgServer {
                 Log.i(TAG, "Starting a connection!");
                 OutputStream stream = mSocket.getOutputStream();
                 stream.write(("HTTP/1.0 200 OK\r\n" +
-                        "Server: cheezyvision\r\n" +
+                        "Server: vikingvision\r\n" +
                         "Cache-Control: no-cache\r\n" +
                         "Pragma: no-cache\r\n" +
                         "Connection: close\r\n" +
