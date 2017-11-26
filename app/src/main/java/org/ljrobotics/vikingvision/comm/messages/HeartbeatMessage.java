@@ -1,4 +1,4 @@
-package com.team254.cheezdroid.comm.messages;
+package org.ljrobotics.vikingvision.comm.messages;
 
 public class HeartbeatMessage extends VisionMessage {
 

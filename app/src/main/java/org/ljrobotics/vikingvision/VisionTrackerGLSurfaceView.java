@@ -1,10 +1,10 @@
-package com.team254.cheezdroid;
+package org.ljrobotics.vikingvision;
 
-import com.team254.cheezdroid.comm.CameraTargetInfo;
-import com.team254.cheezdroid.comm.RobotConnection;
-import com.team254.cheezdroid.comm.VisionUpdate;
-import com.team254.cheezdroid.comm.messages.TargetUpdateMessage;
-import com.team254.cheezdroid.comm.messages.VisionMessage;
+import org.ljrobotics.vikingvision.comm.CameraTargetInfo;
+import org.ljrobotics.vikingvision.comm.RobotConnection;
+import org.ljrobotics.vikingvision.comm.VisionUpdate;
+import org.ljrobotics.vikingvision.comm.messages.TargetUpdateMessage;
+import org.ljrobotics.vikingvision.comm.messages.VisionMessage;
 
 import org.opencv.android.BetterCamera2Renderer;
 import org.opencv.android.BetterCameraGLSurfaceView;

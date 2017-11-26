@@ -1,13 +1,13 @@
-package com.team254.cheezdroid.comm;
+package org.ljrobotics.vikingvision.comm;
 
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import com.team254.cheezdroid.RobotEventBroadcastReceiver;
-import com.team254.cheezdroid.comm.messages.HeartbeatMessage;
-import com.team254.cheezdroid.comm.messages.OffWireMessage;
-import com.team254.cheezdroid.comm.messages.VisionMessage;
+import org.ljrobotics.vikingvision.RobotEventBroadcastReceiver;
+import org.ljrobotics.vikingvision.comm.messages.HeartbeatMessage;
+import org.ljrobotics.vikingvision.comm.messages.OffWireMessage;
+import org.ljrobotics.vikingvision.comm.messages.VisionMessage;
 
 import org.json.JSONObject;
 

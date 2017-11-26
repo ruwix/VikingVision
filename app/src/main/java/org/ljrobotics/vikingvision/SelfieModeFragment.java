@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.team254.cheezdroid;
+package org.ljrobotics.vikingvision;
 
 import android.Manifest;
 import android.app.Activity;

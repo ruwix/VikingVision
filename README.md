@@ -1,4 +1,4 @@
-# CheezDroid
+# Viking Vision
 Android-based Vision System
 
 ## To install OpenCV
@@ -13,8 +13,8 @@ Android-based Vision System
 
 * Enable device owner
 1. adb shell
-2. dpm set-device-owner com.team254.cheezdroid/.ChezyDeviceAdminReceiver
+2. dpm set-device-owner org.ljrobotics.vikingvision/.ChezyDeviceAdminReceiver
 
 ## How to Install ADB on the RoboRIO
 
-Download and run the [install.osx.sh](../installation/install.osx.sh) script in the installation folder. Note that this script has only been tested on Mac OS X; it hasn't been tested on Windows or Linux.
+Download and run the [install.osx.sh](installation/install.osx.sh) script in the installation folder. Note that this script has only been tested on Mac OS X; it hasn't been tested on Windows or Linux.

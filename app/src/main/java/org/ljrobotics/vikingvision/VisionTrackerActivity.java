@@ -1,4 +1,4 @@
-package com.team254.cheezdroid;
+package org.ljrobotics.vikingvision;
 
 import android.Manifest;
 import android.app.Activity;
@@ -35,9 +35,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.support.v4.app.ActivityCompat;
 
-import com.team254.cheezdroid.comm.RobotConnection;
-import com.team254.cheezdroid.comm.RobotConnectionStateListener;
-import com.team254.cheezdroid.comm.RobotConnectionStatusBroadcastReceiver;
+import org.ljrobotics.vikingvision.comm.RobotConnection;
+import org.ljrobotics.vikingvision.comm.RobotConnectionStateListener;
+import org.ljrobotics.vikingvision.comm.RobotConnectionStatusBroadcastReceiver;
 
 import org.florescu.android.rangeseekbar.RangeSeekBar;
 

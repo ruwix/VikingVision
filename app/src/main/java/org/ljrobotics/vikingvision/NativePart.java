@@ -1,4 +1,4 @@
-package com.team254.cheezdroid;
+package org.ljrobotics.vikingvision;
 
 public class NativePart {
     static {
