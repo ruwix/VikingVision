@@ -1,4 +1,4 @@
-package com.team254.cheezdroid;
+package org.ljrobotics.vikingvision;
 
 import android.app.Application;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.PowerManager;
 
-import com.team254.cheezdroid.comm.RobotConnection;
+import org.ljrobotics.vikingvision.comm.RobotConnection;
 
 import java.util.Arrays;
 
