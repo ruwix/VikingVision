@@ -154,17 +154,18 @@ public class VisionTrackerGLSurfaceView extends BetterCameraGLSurfaceView implem
             double widthTarget = Math.abs(targetOne.centroidX - targetTwo.centroidX) + (targetOne.width/2 + targetTwo.width/2);
             double heightTarget = (targetOne.height + targetTwo.height)/2;
 
-            Dimension targetSize =  new Dimension(10.25, 5);
-            CameraSpecification cs = new CameraSpecification(new Dimension(53.1,40.668226065), new Dimension(kWidth,kHeight), 0);
             VisionTarget visionTarget = new VisionTarget(offset, widthTarget, heightTarget);
-            double distance = visionTarget.getDistance(cs, targetSize);
-            double rotation = visionTarget.getRotation(cs);
+            double distance = visionTarget.getDistance(Constants.CAMERA_SPECIFICATION,
+                    Constants.TARGET_SIZE);
+            double rotation = visionTarget.getRotation(Constants.CAMERA_SPECIFICATION);
             NumberFormat nf = NumberFormat.getInstance();
             nf.setMaximumFractionDigits(2);
             nf.setMinimumFractionDigits(2);
             final String targetPosition = "Target at: (" + nf.format(distance) + ", " +
                     nf.format(rotation) +  ")";
             Log.i(LOGTAG, targetPosition);
+
+            visionUpdate.addTargetInfo( visionTarget);
 
             if (mFpsText != null) {
                 Runnable fpsUpdater = new Runnable() {

@@ -1,5 +1,7 @@
 package org.ljrobotics.vikingvision;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.opencv.core.Rect;
 
 /**
@@ -145,6 +147,17 @@ public class VisionTarget {
         }
 
         return true;
+    }
+
+    public JSONObject toJson(CameraSpecification cs, Dimension targetSize){
+        JSONObject visionTarget = new JSONObject();
+        try{
+            visionTarget.put("distance", this.getDistance(cs, targetSize));
+            visionTarget.put("rotation", this.getRotation(cs));
+        } catch (JSONException e){
+            e.printStackTrace();
+        }
+        return visionTarget;
     }
 
     @Override
