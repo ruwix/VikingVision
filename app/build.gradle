@@ -5,6 +5,10 @@ apply plugin: 'com.android.application'
 buildscript {
     repositories {
         jcenter()
+        google()
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'  //last version jan 2016
@@ -17,7 +21,7 @@ dependencies {
     compile project(':openCVLibrary310')
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile 'com.android.support:design:23.0.0'
-    compile 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0'
+    compile 'rangeseekbar:rangeseekbar-library:0.3.0'
 }
 
 android {
